@@ -1,0 +1,41 @@
+{
+  "name": "nodejsexpressapp",
+  "version": "1.0.0",
+  "description": "Start building your next Node.js Express app on IBM Cloud.",
+  "private": true,
+  "engines": {
+    "node": "^12.0.0"
+  },
+  "config": {
+    "entrypoint": "server/server.js"
+  },
+  "scripts": {
+    "start": "node $npm_package_config_entrypoint",
+    "debug": "node --inspect=0.0.0.0:9229 $npm_package_config_entrypoint",
+    "debug:brk": "node --inspect-brk=0.0.0.0:9229 $npm_package_config_entrypoint",
+    "debug:legacy": "node --debug=0.0.0.0:5858 $npm_package_config_entrypoint",
+    "fix": "eslint --ignore-path .gitignore . --fix",
+    "lint": "eslint --ignore-path .gitignore .",
+    "test": "nyc mocha --exit",
+    "dev": "nodemon $npm_package_config_entrypoint"
+  },
+  "nodemonConfig": {
+    "env": {
+      "NODE_HEAPDUMP_OPTIONS": "nosignal"
+    }
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "ibm-cloud-env": "^0",
+    "swagger-ui-express": "^4.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4",
+    "nyc": "^13.3.0"
+  }
+}
