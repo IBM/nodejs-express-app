@@ -96,15 +96,6 @@ ibmcloud dev build --debug
 ibmcloud dev debug
 ```
 
-##### Session Store
-You may see this warning when running `ibmcloud dev run`:
-```
-Warning: connect.session() MemoryStore is not
-designed for a production environment, as it will leak
-memory, and will not scale past a single process.
-```
-When deploying to production, it is best practice to configure sessions to be stored in an external persistence service.
-
 ## Next Steps
 * Learn more about augmenting your Node.js applications on IBM Cloud with the [Node Programming Guide](https://cloud.ibm.com/docs/node?topic=nodejs-getting-started).
 * Explore other [sample applications](https://cloud.ibm.com/developer/appservice/starter-kits) on IBM Cloud.
