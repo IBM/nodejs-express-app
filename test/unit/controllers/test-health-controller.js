@@ -2,7 +2,9 @@ const chai = require('chai');
 const sinon = require('sinon');
 const sinonChai = require('sinon-chai');
 
-const healthController = require('../../../server/controllers/health-controller');
+const healthController = require(
+  '../../../server/controllers/health-controller'
+);
 const res = require('express/lib/response');
 
 const expect = chai.expect;
