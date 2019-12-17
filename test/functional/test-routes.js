@@ -3,7 +3,6 @@ const request = require('supertest');
 
 const expect = chai.expect;
 
-const healthController = require('../../server/controllers/health-controller');
 const server = require('../../server/server');
 
 // example functional tests of routes
@@ -14,7 +13,9 @@ describe('GET /', () => {
       .expect('Content-Type', 'text/html; charset=UTF-8')
       .expect(200)
       .then(response => {
-        expect(response.text).to.include('You are currently running a Node.js app built for the IBM Cloud.');
+        expect(response.text).to.include(
+          'You are currently running a Node.js app built for the IBM Cloud.'
+        );
       });
   });
 });
@@ -50,7 +51,9 @@ describe('POST /fake/route', () => {
       .expect('Content-Type', 'text/html; charset=UTF-8')
       .expect(200)
       .then(response => {
-        expect(response.text).to.include('Whoops! Looks like you got lost or couldn\'t find your page.');
+        expect(response.text).to.include(
+          'Whoops! Looks like you got lost or couldn\'t find your page.'
+        );
       });
   });
 });
