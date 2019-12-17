@@ -18,7 +18,7 @@
 
 > We have similar applications available for [Go](https://github.com/IBM/go-microservice), [Java Spring](https://github.com/IBM/spring-microservice), [Python Flask](https://github.com/IBM/flask-microservice), and [Java Liberty](https://github.com/IBM/java-liberty-microservice).
 
-In this sample, you will create a microservice using Express in Node.js, complete with standard best practices, including a health check and application metric monitoring. A microservice is an individual component of an application that follows the **microservice architecture** - an architectural style that structures an application as a collection of loosely coupled services, which implement business capabilities. The microservice exposes a RESTful API matching a [Swagger](http://swagger.io) definition.
+In this sample, you will create a microservice using Express in Node.js, complete with standard best practices. A microservice is an individual component of an application that follows the **microservice architecture** - an architectural style that structures an application as a collection of loosely coupled services, which implement business capabilities. The microservice exposes a RESTful API matching a [Swagger](http://swagger.io) definition.
 
 You can access the cloud native microservice capabilities at the following endpoints:
 - The [Swagger UI](http://swagger.io/swagger-ui/) is running on: `/swagger/api-docs`

@@ -4,7 +4,7 @@
   "description": "Start building your next Node.js Express app on IBM Cloud.",
   "private": true,
   "engines": {
-    "node": "^12.0.0"
+    "node": "^10.0.0"
   },
   "config": {
     "entrypoint": "server/server.js"
@@ -16,7 +16,7 @@
     "debug:legacy": "node --debug=0.0.0.0:5858 $npm_package_config_entrypoint",
     "fix": "eslint --ignore-path .gitignore . --fix",
     "lint": "eslint --ignore-path .gitignore .",
-    "test": "nyc mocha --exit",
+    "test": "nyc mocha test --recursive --exit",
     "dev": "nodemon $npm_package_config_entrypoint"
   },
   "nodemonConfig": {
@@ -36,6 +36,9 @@
     "eslint-config-strongloop": "^2.1.0",
     "mocha": "^6.2.2",
     "nodemon": "^1.19.4",
-    "nyc": "^13.3.0"
+    "nyc": "^13.3.0",
+    "sinon": "^7.5.0",
+    "sinon-chai": "^3.3.0",
+    "supertest": "^4.0.2"
   }
 }

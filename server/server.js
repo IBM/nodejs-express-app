@@ -36,8 +36,4 @@ app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, '../public', '404.html'));
 });
 
-// error handler for all other uncaught or thrown errors
-app.use((error, req, res, next) => {
-  console.error('An error occurred: ', error);
-  res.sendFile(path.join(__dirname, '../public', '500.html'));
-});
+module.exports = app;
