@@ -26,7 +26,7 @@ You can access the cloud native microservice capabilities at the following endpo
 
 ## Steps
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=82d71c98-f9be-37c5-9cd8-f41eeac245bb) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/0892e28e-35fc-3b45-8441-aaaf7fc1f694/nodejs-express-app) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
 
 ### Deploying to IBM Cloud
 
