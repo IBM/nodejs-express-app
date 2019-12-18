@@ -31,7 +31,7 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
 ### Deploying to IBM Cloud
 
 <p align="center">
-    <a href="https://cloud.ibm.com/developer/appservice/create-app?starterKit=82d71c98-f9be-37c5-9cd8-f41eeac245bb">
+    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/0892e28e-35fc-3b45-8441-aaaf7fc1f694/nodejs-express-app">
     <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
     </a>
 </p>
