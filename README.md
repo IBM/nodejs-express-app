@@ -16,7 +16,7 @@
 
 # Create and deploy a Node.js Express Application
 
-> We have similar applications available for [Go](https://github.com/IBM/go-microservice), [Java Spring](https://github.com/IBM/spring-microservice), [Python Flask](https://github.com/IBM/flask-microservice), and [Java Liberty](https://github.com/IBM/java-liberty-microservice).
+> We have similar applications available for [Go](https://github.com/IBM/go-gin-app), [Java Spring](https://github.com/IBM/java-spring-app), [Python Flask](https://github.com/IBM/python-flask-app), [Python Django](https://github.com/IBM/python-django-app), [Swift](https://github.com/IBM/swift-kitura-app), and [Java Liberty](https://github.com/IBM/java-liberty-app).
 
 In this sample, you will create a microservice using Express in Node.js, complete with standard best practices. A microservice is an individual component of an application that follows the **microservice architecture** - an architectural style that structures an application as a collection of loosely coupled services, which implement business capabilities. The microservice exposes a RESTful API matching a [Swagger](http://swagger.io) definition.
 
