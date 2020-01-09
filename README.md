@@ -16,7 +16,7 @@
 
 # Create and deploy a Node.js Express Application
 
-> We have similar applications available for [Go](https://github.com/IBM/go-gin-app), [Java Spring](https://github.com/IBM/java-spring-app), [Python Flask](https://github.com/IBM/python-flask-app), [Python Django](https://github.com/IBM/python-django-app), [Swift](https://github.com/IBM/swift-kitura-app), and [Java Liberty](https://github.com/IBM/java-liberty-app).
+> We have applications available for [Node.js Express](https://github.com/IBM/node-express-app), [Go Gin](https://github.com/IBM/go-gin-app), [Python Flask](https://github.com/IBM/python-flask-app), [Python Django](https://github.com/IBM/python-django-app), [Java Spring](https://github.com/IBM/java-spring-app), [Java Liberty](https://github.com/IBM/java-liberty-app), and [Swift Kitura](https://github.com/IBM/swift-kitura-app).
 
 In this sample, you will create a microservice using Express in Node.js, complete with standard best practices. A microservice is an individual component of an application that follows the **microservice architecture** - an architectural style that structures an application as a collection of loosely coupled services, which implement business capabilities. The microservice exposes a RESTful API matching a [Swagger](http://swagger.io) definition.
 
@@ -26,12 +26,12 @@ You can access the cloud native microservice capabilities at the following endpo
 
 ## Steps
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/0892e28e-35fc-3b45-8441-aaaf7fc1f694/nodejs-express-app) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/nodejs-express-app) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
 
 ### Deploying to IBM Cloud
 
 <p align="center">
-    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/0892e28e-35fc-3b45-8441-aaaf7fc1f694/nodejs-express-app">
+    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/nodejs-express-app">
     <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
     </a>
 </p>
