@@ -28,17 +28,17 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "ibm-cloud-env": "^0",
-    "swagger-ui-express": "^4.1.2"
+    "swagger-ui-express": "^4.1.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^6.6.0",
+    "eslint": "^6.8.0",
     "eslint-config-strongloop": "^2.1.0",
-    "mocha": "^6.2.2",
-    "nodemon": "^1.19.4",
-    "nyc": "^13.3.0",
-    "sinon": "^7.5.0",
-    "sinon-chai": "^3.3.0",
+    "mocha": "^7.0.0",
+    "nodemon": "^2.0.2",
+    "nyc": "^15.0.0",
+    "sinon": "^8.1.1",
+    "sinon-chai": "^3.4.0",
     "supertest": "^4.0.2"
   }
 }
