@@ -17,7 +17,8 @@
     "fix": "eslint --ignore-path .gitignore . --fix",
     "lint": "eslint --ignore-path .gitignore .",
     "test": "nyc mocha test --recursive --exit",
-    "dev": "nodemon $npm_package_config_entrypoint"
+    "dev": "nodemon $npm_package_config_entrypoint",
+    "check-coverage": "nyc report --check-coverage --lines 100"
   },
   "nodemonConfig": {
     "env": {
