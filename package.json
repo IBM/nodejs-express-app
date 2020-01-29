@@ -14,6 +14,7 @@
     "debug": "node --inspect=0.0.0.0:9229 $npm_package_config_entrypoint",
     "debug:brk": "node --inspect-brk=0.0.0.0:9229 $npm_package_config_entrypoint",
     "debug:legacy": "node --debug=0.0.0.0:5858 $npm_package_config_entrypoint",
+    "check-coverage": "nyc report --check-coverage --lines 100",
     "fix": "eslint --ignore-path .gitignore . --fix",
     "lint": "eslint --ignore-path .gitignore .",
     "test": "nyc mocha test --recursive --exit",
