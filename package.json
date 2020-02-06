@@ -10,15 +10,17 @@
     "entrypoint": "server/server.js"
   },
   "scripts": {
-    "start": "node $npm_package_config_entrypoint",
-    "debug": "node --inspect=0.0.0.0:9229 $npm_package_config_entrypoint",
-    "debug:brk": "node --inspect-brk=0.0.0.0:9229 $npm_package_config_entrypoint",
-    "debug:legacy": "node --debug=0.0.0.0:5858 $npm_package_config_entrypoint",
+    "dev": "nodemon server/server.js",
+    "start": "node server/server.js",
     "check-coverage": "nyc report --check-coverage --lines 100",
-    "fix": "eslint --ignore-path .gitignore . --fix",
     "lint": "eslint --ignore-path .gitignore .",
-    "test": "nyc mocha test --recursive --exit",
-    "dev": "nodemon $npm_package_config_entrypoint"
+    "fix": "eslint --ignore-path .gitignore . --fix",
+    "test": "nyc mocha test --recursive --exit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test && npm run check-coverage"
+    }
   },
   "nodemonConfig": {
     "env": {
@@ -35,7 +37,8 @@
     "chai": "^4.2.0",
     "eslint": "^6.8.0",
     "eslint-config-strongloop": "^2.1.0",
-    "mocha": "^7.0.0",
+    "husky": "^4.2.1",
+    "mocha": "^7.0.1",
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
     "sinon": "^8.1.1",
