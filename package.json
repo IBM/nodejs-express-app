@@ -4,10 +4,7 @@
   "description": "Start building your next Node.js Express app on IBM Cloud.",
   "private": true,
   "engines": {
-    "node": "^10.0.0"
-  },
-  "config": {
-    "entrypoint": "server/server.js"
+    "node": "^12.0.0"
   },
   "scripts": {
     "dev": "nodemon server/server.js",
@@ -20,11 +17,6 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint && npm run test && npm run check-coverage"
-    }
-  },
-  "nodemonConfig": {
-    "env": {
-      "NODE_HEAPDUMP_OPTIONS": "nosignal"
     }
   },
   "dependencies": {

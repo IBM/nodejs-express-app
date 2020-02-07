@@ -44,7 +44,7 @@ To get started building this application locally, you can either run the applica
 
 #### Native Application Development
 
-- Install the latest [Node.js](https://nodejs.org/en/download/) 10+ LTS version.
+- Install the latest [Node.js](https://nodejs.org/en/download/) 12+ LTS version.
 
 Once the Node toolchain has been installed, you can download the project dependencies with:
 
