@@ -1,13 +1,12 @@
-FROM registry.access.redhat.com/ubi8/nodejs-10
+FROM registry.access.redhat.com/ubi8/nodejs-12
 
 ENV PORT 3000
 ENV NODE_HEAPDUMP_OPTIONS nosignal
 EXPOSE 3000
 EXPOSE 9229
 
-WORKDIR /app
-# Bundle app source
-COPY . /app
+WORKDIR /opt/app-root/src
+COPY . /opt/app-root/src
 
 USER root
 RUN chmod -R 777 /opt
