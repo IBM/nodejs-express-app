@@ -7,9 +7,7 @@ EXPOSE 9229
 
 WORKDIR /opt/app-root/src
 COPY . /opt/app-root/src
-
-USER root
-RUN chmod -R 777 /opt
+RUN ln -s /app /opt/app-root/src
 
 CMD ["/bin/bash"]
 ARG bx_dev_user=root
