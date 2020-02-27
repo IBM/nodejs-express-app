@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://cloud.ibm.com">
-        <img src="https://landscape.cncf.io/logos/ibm-cloud-kcsp.svg" height="100" alt="IBM Cloud">
+        <img src="https://my1.digitalexperience.ibm.com/8304c341-f896-4e04-add0-0a9ae02473ba/dxdam/2d/2d559197-6763-4e47-a2cb-8f54c449ff26/ibm-cloud.svg" height="100" alt="IBM Cloud">
     </a>
 </p>
 
@@ -105,3 +105,4 @@ ibmcloud dev debug
 This sample application is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 [Apache License FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+
