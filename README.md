@@ -60,6 +60,24 @@ npm run start
 
 Your application will be running at `http://localhost:3000`.  You can access the `/health` endpoint at the host.
 
+#### Experience Testing
+
+This application comes with a pre written UI test for the application experience written in Python, using Selenium, that you can extend as you further develop your application.
+
+To run the experience test, first you need to [install Python](https://www.python.org/downloads/) on your system.
+
+Then install selenium.
+```bash
+pip install selenium
+```
+[Setup the Chrome WebDriver](https://chromedriver.chromium.org/getting-started) on your system. Make sure that you have added the driver to your system PATH.
+
+With the application running locally (with `npm run start` or `bx dev run`), export the necessary environment variables, and run the Python web experience test in the scripts directory.
+```bash
+export APP_URL=https://localhost:3000 # default value for the local application
+python3 scripts/nodejs_express.py
+```
+
 #### IBM Cloud Developer Tools
 
 Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) on your machine by running the following command:
