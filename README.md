@@ -58,7 +58,7 @@ To run your application locally:
 npm run start
 ```
 
-Your application will be running at `http://localhost:3000`.  You can access the `/health` endpoint at the host.
+Your application will be running at `http://localhost:3000`.  You can access the `/health` endpoint at the host. You can also verify the state of your locally running application using the Selenium UI test script included in the scripts/ directory.
 
 #### IBM Cloud Developer Tools
 
