@@ -3,12 +3,12 @@ FROM registry.access.redhat.com/ubi8/ubi
 RUN curl -sL https://rpm.nodesource.com/setup_12.x | bash -
 RUN yum install -y nodejs
 
-WORKDIR /opt/app-root/src
+WORKDIR /app
 
-COPY package.json /opt/app-root/src
+COPY package.json /app/src
 RUN npm install --only=prod
-COPY server /opt/app-root/src/server
-COPY public /opt/app-root/src/public
+COPY server /app/src/server
+COPY public /app/src/public
 
 ENV NODE_ENV production
 ENV PORT 3000
