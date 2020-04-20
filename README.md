@@ -96,6 +96,16 @@ ibmcloud dev build --debug
 ibmcloud dev debug
 ```
 
+## Testing, Linting, and Code Coverage
+
+### How To Run
+
+To run tests and code coverage, execute `npm run test`. A `coverage` folder will be created with code coverage results that can be reviewed for gaps. The code coverage thresholds are also defined in `package.json` under `nyc` and can be adjusted if needed. Also, the script `npm run fix` is available to automatically fix linting problems.
+
+### Pre-commit Hooks
+
+By default, a [Husky](https://github.com/typicode/husky) pre-commit hook is defined in `package.json` which runs linting, testing, and code coverage before the commit is made. Failures in any of these will prevent the changes from being committed. Review the results and fix problems or modify the thresholds to allow the commit to succeed.
+
 ## Next Steps
 * Learn more about augmenting your Node.js applications on IBM Cloud with the [Node Programming Guide](https://cloud.ibm.com/docs/node?topic=nodejs-getting-started).
 * Explore other [sample applications](https://cloud.ibm.com/developer/appservice/starter-kits) on IBM Cloud.
