@@ -14,7 +14,7 @@
 </p>
 
 
-# Create and deploy a Node.js Express Application
+# Create and deploy a Node.js Express application
 
 > We have applications available for [Node.js Express](https://github.com/IBM/node-express-app), [Go Gin](https://github.com/IBM/go-gin-app), [Python Flask](https://github.com/IBM/python-flask-app), [Python Django](https://github.com/IBM/python-django-app), [Java Spring](https://github.com/IBM/java-spring-app), [Java Liberty](https://github.com/IBM/java-liberty-app), and [Swift Kitura](https://github.com/IBM/swift-kitura-app).
 
@@ -36,13 +36,15 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
     </a>
 </p>
 
-Use the button above to deploy this same application to IBM Cloud. This option will create a deployment pipeline, complete with a hosted GitLab project and DevOps toolchain.  You will have the option of deploying to either Cloud Foundry or a Kubernetes cluster. [IBM Cloud DevOps](https://www.ibm.com/cloud/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud. 
+Click **Deploy to IBM Cloud** to deploy this same application to IBM Cloud. This option creates a deployment pipeline, complete with a hosted GitLab project and a DevOps toolchain. You can deploy your app to Cloud Foundry, a Kubernetes cluster, or a Red Hat OpenShift cluster. OpenShift is available only through a standard cluster, which requires you to have a billable account.
 
-### Building Locally
+[IBM Cloud DevOps](https://www.ibm.com/cloud/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud.
+
+### Building locally
 
 To get started building this application locally, you can either run the application natively or use the [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) for containerization and easy deployment to IBM Cloud.
 
-#### Native Application Development
+#### Native application development
 
 - Install the latest [Node.js](https://nodejs.org/en/download/) 12+ LTS version.
 
@@ -96,17 +98,17 @@ ibmcloud dev build --debug
 ibmcloud dev debug
 ```
 
-## Testing, Linting, and Code Coverage
+## Testing, linting, and code coverage
 
-### How To Run
+### Running tests and code coverage
 
-To run tests and code coverage, execute `npm run test`. A `coverage` folder will be created with code coverage results that can be reviewed for gaps. The code coverage thresholds are also defined in `package.json` under `nyc` and can be adjusted if needed. Also, the script `npm run fix` is available to automatically fix linting problems.
+To run tests and code coverage, run `npm run test`. A `coverage` folder will be created with code coverage results that can be reviewed for gaps. The code coverage thresholds are also defined in `package.json` under `nyc` and can be adjusted if needed. Also, you can use the script `npm run fix` to automatically fix linting problems.
 
-### Pre-commit Hooks
+### Pre-commit hooks
 
-By default, a [Husky](https://github.com/typicode/husky) pre-commit hook is defined in `package.json` which runs linting, testing, and code coverage before the commit is made. Failures in any of these will prevent the changes from being committed. Review the results and fix problems or modify the thresholds to allow the commit to succeed.
+By default, a [Husky](https://github.com/typicode/husky) pre-commit hook is defined in `package.json`, which runs linting, testing, and code coverage before the commit is made. If either the linting, testing, or code coverage fails, the pre-commit hook prevents the changes from being committed. Review the results and fix the problems, or modify the thresholds to allow the commit to succeed.
 
-## Next Steps
+## Next steps
 * Learn more about augmenting your Node.js applications on IBM Cloud with the [Node Programming Guide](https://cloud.ibm.com/docs/node?topic=nodejs-getting-started).
 * Explore other [sample applications](https://cloud.ibm.com/developer/appservice/starter-kits) on IBM Cloud.
 
