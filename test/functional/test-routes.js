@@ -14,7 +14,7 @@ describe('GET /', () => {
       .expect(200)
       .then(response => {
         expect(response.text).to.include(
-          'You are currently running a Node.js app built for the IBM Cloud.'
+          'You are currently running a Node.js app built for the IBM Cloud.',
         );
       });
   });
@@ -52,7 +52,7 @@ describe('POST /fake/route', () => {
       .expect(200)
       .then(response => {
         expect(response.text).to.include(
-          'Whoops! Looks like you got lost or couldn\'t find your page.'
+          'Whoops! Looks like you got lost or couldn\'t find your page.',
         );
       });
   });

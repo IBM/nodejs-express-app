@@ -3,7 +3,7 @@ const sinon = require('sinon');
 const sinonChai = require('sinon-chai');
 
 const healthController = require(
-  '../../../server/controllers/health-controller'
+  '../../../server/controllers/health-controller',
 );
 const res = require('express/lib/response');
 
