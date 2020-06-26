@@ -23,7 +23,7 @@ copyright:
 # Node.js Express starter application
 <!-- Start with a short description that clearly describes what the starter kit and the resulting app do, what's the value of using the starter kit, etc. See the following example. -->
 
-This starter application is a working illustration of a basic microservice that incorporates the [Express web framework](https://expressjs.com/) to provide a landing page and two endpoints.  Use this repo as a template for you own application.
+This starter application is a simple microservice that incorporates the [Express web framework](https://expressjs.com/) to provide a landing page and two endpoints.  Use this repo as a template for you own application.
 
 A microservice is an individual component of an application that follows the **microservice architecture** - an architectural style that structures an application as a collection of loosely coupled services, each of which implements business capability. The microservice exposes a RESTful API matching a [Swagger](http://swagger.io) definition.
 
