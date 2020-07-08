@@ -22,9 +22,8 @@ copyright:
 
 # Node.js Express starter application
 
-This starter application is a simple [microservice](https://www.ibm.com/cloud/learn/microservices) that incorporates the [Express web framework](https://expressjs.com/) to provide a landing page and two endpoints. 
+This starter application is a simple [microservice](https://www.ibm.com/cloud/learn/microservices) that incorporates the [Express web framework](https://expressjs.com/) to provide a landing page and these two endpoints:
 
-This microservice provides the following endpoints:
 - The [Swagger UI](http://swagger.io/swagger-ui/) is running on: `/swagger/api-docs`
 - Health endpoint: `/health`
 
@@ -33,9 +32,9 @@ This app is meant to help you get started on IBM Cloud, and this readme will hel
 * Learn about connecting IBM Cloud managed services to your application.
 * Evaluate IBM Cloud developer tools and capabilities for production applications.
 
->By the time you see this readme, you may have already performed many of the steps below.
-
 ## Quick start
+
+>By the time you see this readme, you may have already performed many of the steps below.
 
 - [Create an IBM Cloud account](https://cloud.ibm.com/registration).
 - [Install IBM Cloud CLI Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started).
@@ -54,7 +53,7 @@ This app is meant to help you get started on IBM Cloud, and this readme will hel
  - Push to the remote master branch to initiate a new build/deploy cycle.
  - [Enhance your app with additional services](#Enhancing-your-app-with-additional-services).
 
-> Out of the box, this application does not connect to external services, but you can add them yourself. If you want a starter app that is pre-configured to connect to external services, try the [IBM Cloud Node.js + Cloudant starter application](https://github.com/IBM/nodejs-cloudant).
+> Out of the box, this application does not connect to external services, but you can add them yourself. If you want a starter app that is pre-configured to connect to external services, try the [IBM Cloud Node.js + Cloudant starter application](https://cloud.ibm.com/developer/appservice/starter-kits/nodejs-+-cloudant).
 
 ## What's included
 
