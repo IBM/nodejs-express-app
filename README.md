@@ -22,7 +22,7 @@ copyright:
 
 # Node.js Express starter application
 
-This starter application is a simple microservice that incorporates the [Express web framework](https://expressjs.com/) to provide a landing page and two endpoints. Use this repo as a template for your own application.
+This starter application is a simple microservice that incorporates the [Express web framework](https://expressjs.com/) to provide a landing page and two endpoints. Use this repository as a template for your own application.
 
 A microservice is an individual component of an application that follows the **microservice architecture** - an architectural style that structures an application as a collection of loosely coupled services, each of which implements business capability. The microservice exposes a RESTful API matching a [Swagger](http://swagger.io) definition.
 
@@ -32,12 +32,12 @@ You can access the cloud native microservice capabilities at the following endpo
 
 The microservice is ready to run locally in a Docker container or with the Node.js runtime that is hosted on your local operating system. Use the [IBM Cloud CLI Developer Tools commands](https://cloud.ibm.com/docs/cli?topic=cli-idt-cli) (`ibmcloud dev`) for local development.
 
-When you are ready to deploy to IBM Cloud, use IBM Cloud developer tools to get up and running quickly. In particular, the [developer workflow that is built into the IBM Cloud platform](https://cloud.ibm.com/developer/appservice/starter-kits/nodejs-express-app) sets up a source code repo for you and links it to a deployment automation pipeline so that you are ready for cloud native iterative development with continuous integration and delivery. Use this setup, the IBM Cloud CLI, and your favorite IDE to do the following:
+When you are ready to deploy to IBM Cloud, use IBM Cloud Developer Tools to get up and running quickly. In particular, the [developer workflow that is built into the IBM Cloud platform](https://cloud.ibm.com/developer/appservice/starter-kits/nodejs-express-app) sets up a source code repo for you and links it to a deployment automation pipeline so that you are ready for cloud native iterative development with continuous integration and delivery. Use this setup, the IBM Cloud CLI, and your favorite IDE to do the following:
 * Quickly iterate the starter application into a proof-of-concept based on your own use case.
 * Learn about connecting IBM Cloud managed services to your application.
 * Evaluate IBM Cloud developer tools and capabilities for production applications.
 
-Note: This application does not connect to external services. If you want to connect the app to external services, try the [IBM Cloud Node.js + Cloudant starter application](https://github.com/IBM/nodejs-cloudant).
+> **Note:** This application does not connect to external services. If you want to connect the app to external services, try the [IBM Cloud Node.js + Cloudant starter application](https://github.com/IBM/nodejs-cloudant).
 
 ## License
 
@@ -52,7 +52,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 ## What's included
 
 - Node.js application that functions as a microservice (server.js)
-- Rudimentary landing page and two endpoints (/health and /swagger)
+- Rudimentary landing page and two endpoints (/health and /swagger/api-docs)
 - Extensible Node server code structure with directories for config, routes, and controllers
 - Simple functional and unit tests
 - Experience test script to verify your UI when the app is running
