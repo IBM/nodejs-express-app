@@ -42,13 +42,13 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^7.4.0",
+    "eslint": "^7.6.0",
     "eslint-config-strongloop": "^2.1.0",
     "husky": "^4.2.5",
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.1",
     "nodemon": "^2.0.4",
     "nyc": "^15.1.0",
-    "sinon": "^9.0.2",
+    "sinon": "^9.0.3",
     "sinon-chai": "^3.5.0",
     "supertest": "^4.0.2"
   }
