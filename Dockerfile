@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi7/ubi:7.9
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-RUN curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash -
 RUN yum install -y nodejs
 
 RUN mkdir /app
