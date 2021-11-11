@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/nodejs-14-minimal:1
+FROM registry.access.redhat.com/ubi8/nodejs-16-minimal:1
 
 ENV PORT 3000
 ENV NODE_HEAPDUMP_OPTIONS nosignal

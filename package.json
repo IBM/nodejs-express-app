@@ -4,7 +4,7 @@
   "description": "Start building your next Node.js Express app on IBM Cloud.",
   "private": true,
   "engines": {
-    "node": "^14.0.0"
+    "node": "^16.0.0"
   },
   "scripts": {
     "dev": "nodemon server/server.js",
