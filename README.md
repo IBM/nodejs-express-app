@@ -203,6 +203,10 @@ Simply push to the master branch of your remote repo to initiate a new build/dep
 
 If you have problems or questions when using the starter kit, you can go directly to the [IBM Cloud Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter) to review featured FAQs, view status, or post questions on Stack Overflow. You can also open a support case.
 
+## CRA Scanning
+
+This repository includes a `.cracveomit` file that is used by Code Risk Analyzer (CRA) in IBM Cloud Continuous Delivery. This file helps address vulnerabilities that are found by CRA until a remediation is available, at which point the vulnerabilities will be addressed in the respective package versions. CRA keeps the code in this repository free of known vulnerabilities, and therefore helps make applications that are built on this code more secure. If you are not using CRA, you can safely ignore this file.
+
 ## Next steps
 
  - Augment this application to fit your own use case.
