@@ -9,11 +9,12 @@
   "scripts": {
     "dev": "nodemon server/server.js",
     "start": "node server/server.js",
-    "check-coverage": "nyc report --check-coverage --lines 100",
+    "check-coverage": "c8 report --check-coverage --lines 100",
     "lint": "eslint --ignore-path .gitignore .",
     "fix": "eslint --ignore-path .gitignore . --fix",
-    "test": "nyc mocha test --recursive --exit"
+    "test": "c8 mocha test --recursive --exit"
   },
+  "type": "module",
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint && npm run test && npm run check-coverage"
@@ -37,17 +38,18 @@
   "dependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
+    "helmet": "^5.0.2",
     "ibm-cloud-env": "^0",
     "swagger-ui-express": "^4.3.0"
   },
   "devDependencies": {
+    "c8": "^7.11.0",
     "chai": "^4.3.6",
     "eslint": "^8.9.0",
     "eslint-config-strongloop": "^2.1.0",
     "husky": "^7.0.4",
     "mocha": "^9.2.0",
     "nodemon": "^2.0.15",
-    "nyc": "^15.1.0",
     "sinon": "^13.0.1",
     "sinon-chai": "^3.7.0",
     "supertest": "^6.2.2"

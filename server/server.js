@@ -1,12 +1,24 @@
 // import dependencies and initialize express
-const express = require('express');
-const path = require('path');
-const bodyParser = require('body-parser');
+import express from 'express';
+import path from 'path';
+import bodyParser from 'body-parser';
+import helmet from 'helmet';
 
-const healthRoutes = require('./routes/health-route');
-const swaggerRoutes = require('./routes/swagger-route');
+import { fileURLToPath } from 'url';
+
+import healthRoutes from './routes/health-route.js';
+import swaggerRoutes from './routes/swagger-route.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
+
+// if production, enable helmet
+/* c8 ignore next 3  */
+if (process.env.VCAP_APPLICATION) {
+  app.use(helmet());
+}
 
 // enable parsing of http request body
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -33,4 +45,4 @@ app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, '../public', '404.html'));
 });
 
-module.exports = app;
+export default app;
