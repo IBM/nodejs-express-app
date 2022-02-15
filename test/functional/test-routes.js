@@ -1,9 +1,9 @@
-const chai = require('chai');
-const request = require('supertest');
+import chai from 'chai';
+import request from 'supertest';
 
 const expect = chai.expect;
 
-const server = require('../../server/server');
+import server from '../../server/server.js';
 
 // example functional tests of routes
 describe('GET /', () => {

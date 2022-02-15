@@ -1,8 +1,14 @@
 // import dependencies and initialize the express router
-const express = require('express');
-const swaggerUi = require('swagger-ui-express');
+import express from 'express';
+import swaggerUi from 'swagger-ui-express';
 
-const swaggerDoc = require('../config/swagger');
+import { readFile } from 'fs/promises';
+
+const swaggerDoc = JSON.parse(
+  await readFile(
+    new URL('../config/swagger.json', import.meta.url),
+  ),
+);
 
 const router = express.Router();
 
@@ -10,4 +16,4 @@ const router = express.Router();
 router.use('/api-docs', swaggerUi.serve);
 router.get('/api-docs', swaggerUi.setup(swaggerDoc));
 
-module.exports = router;
+export default router;

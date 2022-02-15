@@ -1,11 +1,9 @@
-const chai = require('chai');
-const sinon = require('sinon');
-const sinonChai = require('sinon-chai');
+import chai from 'chai';
+import sinon from 'sinon';
+import sinonChai from 'sinon-chai';
 
-const healthController = require(
-  '../../../server/controllers/health-controller',
-);
-const res = require('express/lib/response');
+import HealthController from '../../../server/controllers/health-controller.js';
+import res from 'express/lib/response.js';
 
 const expect = chai.expect;
 const sandbox = sinon.createSandbox();
@@ -27,6 +25,7 @@ describe('Test health controller', () => {
 
   it('should return status UP', () => {
     const mockReq = {};
+    const healthController = new HealthController();
 
     healthController.getHealth(mockReq, res);
     expect(res.json).to.have.been.calledOnceWith({

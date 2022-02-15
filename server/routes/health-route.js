@@ -1,10 +1,12 @@
 // import dependencies and initialize the express router
-const express = require('express');
-const HealthController = require('../controllers/health-controller');
+import express from 'express';
+import HealthController from '../controllers/health-controller.js';
 
 const router = express.Router();
 
-// define routes
-router.get('', HealthController.getHealth);
+const healthController = new HealthController();
 
-module.exports = router;
+// define routes
+router.get('', healthController.getHealth);
+
+export default router;

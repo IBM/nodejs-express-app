@@ -1,7 +1,12 @@
 // get health of application
-exports.getHealth = (req, res) => {
-  console.log('In controller - getHealth');
-  res.json({
-    status: 'UP',
-  });
-};
+export class HealthController {
+  getHealth = (req, res) => {
+    console.log('In controller - getHealth');
+    res.json({
+      status: 'UP',
+    });
+  };
+}
+
+
+export default HealthController;
