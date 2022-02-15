@@ -1,12 +1,11 @@
 {
     "env": {
-        "commonjs": true,
         "node": true,
         "mocha": true
     },
     "extends": "strongloop",
     "parserOptions": { 
-        "ecmaVersion": 10,
+        "ecmaVersion": 2022,
         "sourceType": "module"
     }
 }
