@@ -1,5 +1,5 @@
 // get health of application
-export class HealthController {
+class HealthController {
   getHealth = (req, res) => {
     console.log('In controller - getHealth');
     res.json({
