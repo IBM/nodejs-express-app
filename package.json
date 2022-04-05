@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "nodemon server/server.js",
+    "debug": "node --nolazy --inspect-brk=5858 server.js",
     "start": "node server/server.js",
     "check-coverage": "c8 report --check-coverage --lines 100",
     "lint": "eslint --ignore-path .gitignore .",
@@ -36,7 +37,7 @@
     ]
   },
   "dependencies": {
-    "body-parser": "^1.19.2",
+    "body-parser": "^1.20.0",
     "express": "^4.17.3",
     "helmet": "^5.0.2",
     "ibm-cloud-env": "^0",
