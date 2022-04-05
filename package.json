@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "nodemon server/server.js",
+    "debug": "node --nolazy --inspect-brk=5858 server.js",
     "start": "node server/server.js",
     "check-coverage": "c8 report --check-coverage --lines 100",
     "lint": "eslint --ignore-path .gitignore .",
