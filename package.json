@@ -46,13 +46,13 @@
   "devDependencies": {
     "c8": "^7.11.3",
     "chai": "^4.3.6",
-    "eslint": "^8.18.0",
+    "eslint": "^8.19.0",
     "eslint-config-strongloop": "^2.1.0",
     "husky": "^8.0.1",
     "mocha": "^10.0.0",
     "nodemon": "^2.0.18",
     "sinon": "^14.0.0",
     "sinon-chai": "^3.7.0",
-    "supertest": "^6.2.3"
+    "supertest": "^6.2.4"
   }
 }
