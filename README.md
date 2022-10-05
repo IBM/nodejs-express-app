@@ -24,6 +24,12 @@ copyright:
 
 This starter application is a simple microservice that incorporates the [Express web framework](https://expressjs.com/) to provide a landing page and two endpoints. Use this repository as a template for your own application.
 
+<p align="center">
+    <a href="https://cloud.ibm.com/developer/appservice/create-app?starterKit=26ad9ecb-1b83-3ad0-b49e-e1184306ab3a">
+    <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
+    </a>
+</p>
+
 A microservice is an individual component of an application that follows the **microservice architecture** - an architectural style that structures an application as a collection of loosely coupled services, each of which implements business capability. The microservice exposes a RESTful API matching a [Swagger](http://swagger.io) definition.
 
 You can access the cloud native microservice capabilities at the following endpoints:
