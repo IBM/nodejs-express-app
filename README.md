@@ -32,10 +32,19 @@ You can access the cloud native microservice capabilities at the following endpo
 
 The microservice is ready to run locally in a Docker container or with the Node.js runtime that is hosted on your local operating system. Use the [IBM Cloud CLI Developer Tools commands](https://cloud.ibm.com/docs/cli?topic=cli-idt-cli) (`ibmcloud dev`) for local development.
 
-When you are ready to deploy to IBM Cloud, use IBM Cloud Developer Tools to get up and running quickly. In particular, the [developer workflow that is built into the IBM Cloud platform](https://cloud.ibm.com/developer/appservice/starter-kits/nodejs-express-app) sets up a source code repo for you and links it to a deployment automation pipeline so that you are ready for cloud native iterative development with continuous integration and delivery. Use this setup, the IBM Cloud CLI, and your favorite IDE to do the following:
-* Quickly iterate the starter application into a proof-of-concept based on your own use case.
-* Learn about connecting IBM Cloud managed services to your application.
-* Evaluate IBM Cloud developer tools and capabilities for production applications.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=26ad9ecb-1b83-3ad0-b49e-e1184306ab3a) or [build it locally](#building-locally) by cloning this repo first. After your app is live, you can access the `/health` endpoint to build out your cloud native application.
+
+### Deploying to IBM Cloud
+
+<p align="center">
+    <a href="https://cloud.ibm.com/developer/appservice/create-app?starterKit=26ad9ecb-1b83-3ad0-b49e-e1184306ab3a">
+    <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
+    </a>
+</p>
+
+Click **Deploy to IBM Cloud** to deploy this same application to IBM Cloud. This option creates a deployment pipeline, complete with a hosted GitLab project and a DevOps toolchain. You can deploy your app to Cloud Foundry, a Kubernetes cluster, or a Red Hat OpenShift cluster. OpenShift is available only through a standard cluster, which requires you to have a billable account.
+
+[IBM Cloud DevOps](https://www.ibm.com/cloud/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud.
 
 > **Note:** This application does not connect to external services. If you want to connect the app to external services, try the [IBM Cloud Node.js + Cloudant starter application](https://github.com/IBM/nodejs-cloudant).
 
