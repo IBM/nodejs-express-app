@@ -32,7 +32,7 @@ You can access the cloud native microservice capabilities at the following endpo
 
 The microservice is ready to run locally in a Docker container or with the Node.js runtime that is hosted on your local operating system. Use the [IBM Cloud CLI Developer Tools commands](https://cloud.ibm.com/docs/cli?topic=cli-idt-cli) (`ibmcloud dev`) for local development.
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/go-gin-app) or [build it locally](#building-locally) by cloning this repo first. After your app is live, you can access the `/health` endpoint to build out your cloud native application.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=26ad9ecb-1b83-3ad0-b49e-e1184306ab3a) or [build it locally](#building-locally) by cloning this repo first. After your app is live, you can access the `/health` endpoint to build out your cloud native application.
 
 ### Deploying to IBM Cloud
 
