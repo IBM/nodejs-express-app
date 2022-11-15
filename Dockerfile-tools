@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/nodejs-16:1 as build
+FROM registry.access.redhat.com/ubi8/nodejs-18:1 as build
 
 ENV PORT 3000
 ENV NODE_HEAPDUMP_OPTIONS nosignal

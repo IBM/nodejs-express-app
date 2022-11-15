@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/nodejs-16-minimal:1
+FROM registry.access.redhat.com/ubi8/nodejs-18-minimal:1
 
 WORKDIR /opt/app-root/src
 
