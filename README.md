@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2020
+  years: 2020, 2022
 
 ---
 <p align="center">
@@ -42,7 +42,7 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
     </a>
 </p>
 
-Click **Deploy to IBM Cloud** to deploy this same application to IBM Cloud. This option creates a deployment pipeline, complete with a hosted GitLab project and a DevOps toolchain. You can deploy your app to Cloud Foundry, a Kubernetes cluster, or a Red Hat OpenShift cluster. OpenShift is available only through a standard cluster, which requires you to have a billable account.
+Click **Deploy to IBM Cloud** to deploy this same application to IBM Cloud. This option creates a deployment pipeline, complete with a hosted GitLab project and a DevOps toolchain. You can deploy your app to a Kubernetes cluster or a Red Hat OpenShift cluster. OpenShift is available only through a standard cluster, which requires you to have a billable account.
 
 [IBM Cloud DevOps](https://www.ibm.com/cloud/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud.
 
@@ -87,15 +87,11 @@ If you use the IBM Cloud developer workflow, you also get:
 
 ### Choosing a deployment target
 
-Before you begin, you should decide on the type of deployment environment you want to target for your app. The IBM Cloud platform offers many types of environments, but the most common for cloud native apps are the IBM Kubernetes Service (IKS), Red Hat OpenShift clusters, or Cloud Foundry.
+Before you begin, you should decide on the type of deployment environment you want to target for your app. The IBM Cloud platform offers many types of environments, but the most common for cloud native apps are the IBM Kubernetes Service (IKS) or Red Hat OpenShift clusters.
 
-**Deprecated**: IBM® Cloud Foundry is deprecated. For more information, see [Deprecation of IBM Cloud Foundry](http://ibm.biz/ibmcf-announce).
+We recommend that you create an IKS cluster ahead of time and deploy your application there. Creating an IKS cluster can take 15-30 minutes, but it's worth the wait. IKS runs your app inside orchestrated containers, and this option represents best-practice architecture for cloud native applications. To create an IKS cluster, you need a billable account. (That is, you either you need a credit card that is associated with your account for identity verification, or you need an IBM Cloud subscription). However, IKS offers a free cluster for 30 days, so you have plenty of time to try your app first.
 
->We recommend that you create an IKS cluster ahead of time and deploy your application there. Creating an IKS cluster can take 15-30 minutes, but it's worth the wait. IKS runs your app inside orchestrated containers, and this option represents best-practice architecture for cloud native applications. To create an IKS cluster, you need a billable account. (That is, you either you need a credit card that is associated with your account for identity verification, or you need an IBM Cloud subscription). However, IKS offers a free cluster for 30 days, so you have plenty of time to try your app first.
-
->Red Hat OpenShift, like IKS, is based on Kubernetes and represents best-practice architecture. OpenShift is especially good for hybrid environments as it can be run on IBM Cloud, in your own data center, or on the edge. OpenShift also requires a billable account but currently does not offer a free tier.
-
->Cloud Foundry abstracts away the runtime infrastructure, which makes deployment quick and easy. Although Cloud Foundry is easy to use, it is not as scalable as a Kubernetes-based solution, it typically costs more, and gives you less control over the environment. Cloud Foundry runtimes with small amounts of memory are available for IBM Cloud Lite accounts, but you will likely run out of memory quickly, even for exploratory applications. Therefore, you might want to upgrade to a billable account to do meaningful evaluations with Cloud Foundry.
+Red Hat OpenShift, like IKS, is based on Kubernetes and represents best-practice architecture. OpenShift is especially good for hybrid environments as it can be run on IBM Cloud, in your own data center, or on the edge. OpenShift also requires a billable account but currently does not offer a free tier.
 
 ## Configuring your starter application
 
@@ -123,7 +119,7 @@ Follow the prompts and select the starter kit of interest (`Node.js Express App`
 
 ## Verifying that your cloud app is working
 
-Internally, this starter app communicates on port 3000, but the exposed URL for your running application is determined by the runtime platform (Kubernetes, OpenShift, or Cloud Foundry). You can find a link to your running application in these ways:
+Internally, this starter app communicates on port 3000, but the exposed URL for your running application is determined by the runtime platform (Kubernetes or OpenShift). You can find a link to your running application in these ways:
 - Look for the link in the App details view for your app in the IBM Cloud console.
 - Look in the deployment logs that are produced by the deployment stage of your automated pipeline. See [Debugging your cloud app](#Debugging-your-cloud-app) for details about how to find these logs.
 - Look at the terminal output after you successfully run the `ibmcloud dev create` command.
