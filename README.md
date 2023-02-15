@@ -2,12 +2,6 @@
 
 > This repository will not be updated. The repository will be kept available in read-only mode.
 
----
-
-copyright:
-  years: 2020, 2022
-
----
 <p align="center">
     <a href="https://cloud.ibm.com">
         <img src="https://cloud.ibm.com/media/docs/developer-appservice/resources/ibm-cloud.svg" height="100" alt="IBM Cloud">
@@ -209,4 +203,10 @@ This repository includes a `.cracveomit` file that is used by Code Risk Analyzer
  - Augment this application to fit your own use case.
  - Try other starter kits for IBM Cloud. Applications are available for [Node.js Express](https://github.com/IBM/node-express-app), [Go Gin](https://github.com/IBM/go-gin-app), [Python Flask](https://github.com/IBM/python-flask-app), [Python Django](https://github.com/IBM/python-django-app), [Java Spring](https://github.com/IBM/java-spring-app), [Java Liberty](https://github.com/IBM/java-liberty-app), [Swift Kitura](https://github.com/IBM/swift-kitura-app), [Android](https://github.com/IBM/android-app), and [iOS](https://github.com/IBM/ios-app).
 
+---
+
+copyright:
+  years: 2020, 2022
+
+---
 
